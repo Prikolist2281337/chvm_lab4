@@ -1,0 +1,137 @@
+/* Общие настройки */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fafafa;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    max-width: 380px; /* Ограничиваем максимальную ширину */
+    margin: auto; /* Центруем страницу */
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #ffffff;
+    position: relative;
+}
+
+.menu-icon {
+    width: 24px;
+    height: 24px;
+}
+
+h1 {
+    text-align: center;
+    color: #101010;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+/* Основные стили формы */
+label {
+    display: block;
+    margin-top: 10px;
+    color: #101010;
+    font-weight: bold;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.restaurant-name {
+    background-color: #605050;
+    font-size: 22px;
+    height: 36px;
+    margin: 15;
+    text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+    color: white;
+}
+
+
+input[type="tel"] {
+    width: calc(100% - 20px); /* Используем всю доступную ширину */
+    height: 36px;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 0;
+    border: 1px solid #828282;
+    font-size: 22px;
+}
+
+/* Кнопки */
+button {
+    width: calc(100% - 20px); /* Используем всю доступную ширину */
+    height: 40px;
+    margin-top: 10px;
+    border-radius: 16px;
+    font-size: 22px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.register-btn {
+    background-color: #f0f0f0;
+    color: #828282;
+}
+
+.continue-btn {
+    background-color: #454532;
+    color: white;
+}
+
+.continue-btn.active {
+    background-color: #202020;
+}
+
+.social-btn {
+    width: calc(100% - 20px); /* Используем всю доступную ширину */
+    height: 40px;
+    margin-top: 28px;
+    border-radius: 6px;
+    background-color: #f0f0f0;
+    color: black;
+    font-size: 22px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.google-btn {
+    background-color: #f0f0f0;
+}
+
+.apple-btn {
+    background-color: #f0f0f0;
+}
+
+.pspace {
+    margin-bottom: 50px;
+}
+
+
+
+/* Соглашение */
+.agreement {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    font-size: 18px;
+    color: #828282;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 20px;
+    color: #828282;
+}

@@ -1,0 +1,128 @@
+/* Общие настройки */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fafafa;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    max-width: 380px;
+    margin: auto;
+}
+
+/* Шапка */
+header {
+    background-color: #F5EFF7;
+    padding: 0px;
+    position: relative;
+    display: flex; /* Добавляем Flexbox для выравнивания */
+    align-items: center; /* Центрирование по вертикали */
+    width:380px;
+}
+
+.menu-container {
+    overflow-x: hidden;
+    white-space: nowrap;
+    max-width: 260px;
+    height: 40px;
+    flex-grow: 1; /* Растягиваем меню на оставшееся пространство */
+}
+
+.scrollmenu {
+    display: inline-flex;
+    width:380px;
+}
+
+.menu-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: inline-flex;
+}
+
+.menu-list li {
+    margin-right: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #101010;
+    padding: 10px;
+    display: inline-flex;
+}
+
+nav a:hover {
+    text-decoration: none;
+    color: #101080;
+    padding: 10px;
+}
+
+
+.scroll-left, .scroll-right {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width:30px;
+    height:26px;
+    font-size: 10px;
+}
+
+.scroll-left:hover, .scroll-right:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+/* Основное содержимое */
+#city-map {
+    width: 350px;
+    height: 210px;
+    background-color: #FEE9E7;
+    background-image: url('map.png'); 
+    margin: 10px;
+}
+
+#hall-scheme {
+    width: 350px;
+    height: 140px;
+    background-color: #FEE9E7;
+    background-image: url('tables.png'); 
+    margin: 10px;
+}
+
+
+button {
+    width: 350px;
+    height: 40px;
+    margin: 10px;
+    border-radius: 16px;
+    background-color: #454532;
+    color: white;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #606048;
+}
+
+/* Поля ввода */
+label {
+    display: block;
+    margin-left: 10px;
+    font-size: 16px;
+}
+
+input[type="number"], input[type="datetime-local"] {
+    width: 340px;
+    height: 40px;
+    margin: 10px;
+    font-size: 16px;
+}
+
+/* Подвал */
+footer {
+    text-align: center;
+    margin-top: 20px;
+    color: #828282;
+}

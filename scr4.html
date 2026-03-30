@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="windows-1251">
+    <meta name="viewport" content="width=380">
+    <title>Список заказов</title>
+    <link rel="stylesheet" href="styles4.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="scripts4.js"></script>
+</head>
+<body>
+    <!-- Шапка страницы -->
+    <header>
+        <button id="back-to-menu"><< Возврат в основное меню</button>
+    </header>
+
+    <!-- Основное содержимое -->
+    <main>
+        <h1>Список заказов</h1>
+
+        <!-- Список заказов -->
+        <section class="orders-list">
+            <div class="order-item" data-order-id="1">
+                <p>Время заказа: 24.03.2026</p>
+                <p>Стоимость: 2034 руб.</p>
+            </div>
+            <div class="order-item" data-order-id="2">
+                <p>Время заказа: 25.03.2026</p>
+                <p>Стоимость: 2200 руб.</p>
+            </div>
+            <div class="order-item" data-order-id="3">
+                <p>Время заказа: 26.03.2026</p>
+                <p>Стоимость: 1800 руб.</p>
+            </div>
+            <div class="order-item" data-order-id="4">
+                <p>Время заказа: 27.03.2026</p>
+                <p>Стоимость: 2500 руб.</p>
+            </div>
+            <div class="order-item" data-order-id="5">
+                <p>Время заказа: 28.03.2026</p>
+                <p>Стоимость: 1900 руб.</p>
+            </div>
+        </section>
+
+        <!-- Список блюд -->
+        <section class="dishes-list">
+            <!-- Начальный список блюд для первого заказа -->
+            <div class="dishes-group" data-order-id="1">
+                <p>Салат Цезарь</p>
+                <p>Куриная грудка гриль</p>
+                <p>Картофель фри</p>
+                <p>Чай черный</p>
+            </div>
+            <!-- Списки блюд для других заказов -->
+            <div class="dishes-group" data-order-id="2" style="display: none;">
+                <p>Борщ</p>
+                <p>Свинина тушеная</p>
+                <p>Рис отварной</p>
+                <p>Компот яблочный</p>
+            </div>
+            <div class="dishes-group" data-order-id="3" style="display: none;">
+                <p>Омлет с ветчиной</p>
+                <p>Сырники</p>
+                <p>Вареники с вишней</p>
+                <p>Молоко</p>
+            </div>
+            <div class="dishes-group" data-order-id="4" style="display: none;">
+                <p>Пицца пепперони</p>
+                <p>Спагетти карбонара</p>
+                <p>Салат греческий</p>
+                <p>Кофе капучино</p>
+            </div>
+            <div class="dishes-group" data-order-id="5" style="display: none;">
+                <p>Суши сет</p>
+                <p>Удон с морепродуктами</p>
+                <p>Морс клюквенный</p>
+                <p>Холодный чай</p>
+            </div>
+        </section>
+
+        <!-- Кнопка повторить заказ -->
+        <section class="repeat-order">
+            <button>Повторить заказ</button>
+        </section>
+    </main>
+
+    <!-- Подвал -->
+    <footer>
+        <p>Контактная информация</p>
+    </footer>
+</body>
+</html>

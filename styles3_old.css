@@ -1,0 +1,117 @@
+/* Общие настройки */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fafafa;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    max-width: 380px;
+    margin: auto;
+}
+
+/* Шапка */
+header {
+    background-color: #F5EFF7;
+    padding: 10px;
+}
+
+.menu-categories {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+.menu-categories li {
+    margin-right: 10px;
+}
+
+.menu-categories a {
+    text-decoration: none;
+    color: #1A1A1A;
+    padding: 10px;
+    display: inline-block;
+    background-color: transparent;
+    transition: background-color 0.3s ease;
+}
+
+.menu-categories a.active {
+    background-color: #FF383C;
+    color: white;
+}
+
+.menu-categories a:hover {
+    background-color: #FF383C;
+    color: white;
+}
+
+/* Основное содержимое */
+.dishes-section {
+    background-color: #FFFFFF;
+    padding: 10px;
+}
+
+.dishes-grid {
+    background-color: #EEB9E7;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    height: 554px;
+    overflow-y: auto;
+}
+
+.dish-card {
+    background-color: #FE29E7;
+    background-image: url('dish1.png');
+    padding: 20px;
+    text-align: center;
+    font-size: 16px;
+    line-height: 1.5;
+    height: 172px;
+    width:172px;
+    border: 1px solid #ddd;
+}
+
+.breakfast, .salads, .soup, .hot-dishes, .lunch, .desserts, .drinks {
+    display: none;
+}
+
+.breakfast.active, .salads.active, .soup.active, .hot-dishes.active, .lunch.active, .desserts.active, .drinks.active {
+    display: block;
+}
+
+/* Кнопки внизу */
+.buttons-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.order-btn, .reserve-btn {
+    width: 165px;
+    height: 40px;
+    margin: 10px;
+    border-radius: 16px;
+    background-color: #454532;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.order-btn.active, .reserve-btn.active {
+    background-color: #202020;
+}
+
+.order-btn:hover, .reserve-btn:hover {
+    background-color: #202020;
+}
+
+/* Подвал */
+footer {
+    text-align: center;
+    margin-top: 20px;
+    color: #828282;
+}

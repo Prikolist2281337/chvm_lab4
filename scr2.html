@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="windows-1251">
+    <meta name="viewport" content="width=380">
+    <title>Забронировать столик</title>
+    <link rel="stylesheet" href="styles2.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script2.js"></script>
+</head>
+<body>
+    <!-- Шапка страницы -->
+    <header>
+        <nav>
+         <div class="scrollmenu">
+            <!-- Левая кнопка прокрутки -->
+            <button class="scroll-left"><</button>
+            
+            <!-- Контейнер для меню -->
+            <div class="menu-container">
+                <ul class="menu-list">
+                    <li><a href="#">Главная</a></li>
+                    <li><a href="#">Заказ столика</a></li>
+                    <li><a href="#">Доставка</a></li>
+                    <li><a href="#">Архив заказов</a></li>
+                    <li><a href="#">Контакты</a></li>
+                    <li><a href="#">Личный кабинет</a></li>
+                </ul>
+            </div>
+            <!-- Правая кнопка прокрутки -->
+            <button class="scroll-right">></button>
+          </div>
+        </nav>
+    </header>
+
+    <!-- Основное содержимое -->
+    <main>
+        <section>
+            <div id="city-map">
+                <p>Карта города</p>
+            </div>
+            <button>Посмотреть сайт ресторана</button>
+            <div id="hall-scheme">
+                <p>Схема столиков в зале</p>
+            </div>
+        </section>
+
+        <!-- Форма бронирования -->
+        <section>
+            <label for="persons">Количество персон:</label>
+            <input type="number" id="persons" min="1">
+
+            <label for="datetime">Выберите дату и время:</label>
+            <input type="datetime-local" id="datetime">
+
+            <button type="submit">Подтвердить</button>
+        </section>
+    </main>
+
+    <!-- Подвал -->
+    <footer>
+        <p>Контактная информация</p>
+    </footer>
+</body>
+</html>
